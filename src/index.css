@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Metal+Mania&family=Butcherman&family=Eater&family=Chela+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white;
+  }
+  
+  body {
+    @apply bg-black text-white font-mono;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-bold uppercase tracking-wider;
+  }
+  
+  p {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .punk-text {
+    @apply text-white font-mono font-bold uppercase tracking-widest;
+  }
+  
+  .punk-border {
+    @apply border-2 border-white;
+  }
+  
+  .punk-button {
+    @apply bg-black text-white border-2 border-white px-6 py-3 font-mono font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-200 cursor-pointer;
+  }
+  
+  .punk-card {
+    @apply bg-black border-2 border-white p-6;
+  }
+  
+  .punk-input {
+    @apply bg-black text-white border-2 border-white px-4 py-2 font-mono focus:outline-none focus:bg-white focus:text-black;
+  }
+  
+  /* Punk/Dirty Font Variations */
+  .punk-title-creepy {
+    font-family: 'Creepster', cursive;
+    @apply text-white font-bold uppercase tracking-widest;
+    text-shadow: 2px 2px 0px #000;
+  }
+  
+  .punk-title-metal {
+    font-family: 'Metal Mania', cursive;
+    @apply text-white font-bold uppercase tracking-wider;
+    text-shadow: 1px 1px 0px #000;
+  }
+  
+  .punk-title-butcher {
+    font-family: 'Butcherman', cursive;
+    @apply text-white font-bold uppercase tracking-wide;
+    text-shadow: 2px 2px 0px #000;
+  }
+  
+  .punk-title-eater {
+    font-family: 'Eater', cursive;
+    @apply text-white font-bold uppercase tracking-wider;
+    text-shadow: 1px 1px 0px #000;
+  }
+  
+  .punk-title-chela {
+    font-family: 'Chela One', cursive;
+    @apply text-white font-bold uppercase tracking-wider;
+    text-shadow: 1px 1px 0px #000;
+  }
+  
+  .punk-title-nosifer {
+    font-family: 'Nosifer', cursive;
+    @apply text-white font-bold uppercase tracking-widest;
+    text-shadow: 2px 2px 0px #000;
+  }
+}
